@@ -1,0 +1,12 @@
+disp('SOFTEC SOFTWARE SOLUTIONS AND DEV OPS');
+disp('Muhammad Hamza 21i-1656');
+disp('Ahmad Akhtar 21i-1655');
+disp('Hammad javaid I21 1661');
+x=input('Enter the value for the first variable x: ');
+y=input('Enter the value for the second variable y: ');
+Funcion=@(a, b)[-0.1.*b(1) + 0.075.*b(2) + 1.5; 0.1.*b(1) - 0.2.*b(2) + 3];
+[aa,bb]= ode45(Funcion, [-50 50], [x y]);
+plot(aa,bb);
+title('GRAPH OF THE SOLUTION');
+xlabel('X Axis');
+ylabel('Y Axis');
